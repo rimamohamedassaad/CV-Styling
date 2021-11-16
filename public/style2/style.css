@@ -140,7 +140,9 @@ font-size: small;
       margin-left: 20x;
      
   }
-  
+  .experience{
+    padding-top: 0;
+  }
   ul ,.experience h4{
   
     margin-top: 0;
@@ -264,9 +266,7 @@ width: 65px;
     h3{
       border-bottom: 1px solid black;
       
-      
     }
-    
     #competencies h3 {
 width: 110px;
     } #education h3{
