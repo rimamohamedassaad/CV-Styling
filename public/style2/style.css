@@ -58,7 +58,7 @@ h2 ,#about h3{
     
     margin-bottom: 80px;
   }
-    
+  
   .skills-primary, .skills-secondary {
     display: flex;
     grid-column: 2 ; 
@@ -74,9 +74,7 @@ h2 ,#about h3{
     padding-top: 5px;
   }
     
-    .skills-secondary{
-font-size: small;
-    }
+    
     
   
 .skill[data-skill="5"] , .skill[data-skill='9'],.skill[data-skill="3"],.skill[data-skill="1"] , .skill[data-skill="7"]{
@@ -217,6 +215,9 @@ width: 65px;
       font-size: 7px;
   height: 10px;
     }
+    .skills-secondary{
+      font-size: small;
+          }
     .contacts{
       width: 120%;
       flex-wrap: wrap;
@@ -241,9 +242,9 @@ width: 65px;
       width:100%;
     }
     .skill {
-      height: 20px;
-      font-size: 10px;
-      
+     
+      width:fit-content;
+      font-size: xx-small;
     }
     .experience-date , .experience-type{
       font-size: xx-small;
@@ -300,7 +301,7 @@ width: 65px;
       width:100%;
     }
     .skill {
-      height: 20px;
+      height: 30px;
       font-size: 15px;
     }
     .skills{
