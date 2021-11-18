@@ -1,37 +1,56 @@
 body{
     max-width: 100%;
+    background-color: rgb(215, 225, 243);
 }
 header {
     padding-top: 10px;
 width: 100%;
-background-color: rgb(173, 167, 167); 
+background-color: rgb(80, 97, 245); 
 display:flex;
 font-family: Arial, Helvetica, sans-serif;
 padding-bottom: 5px;
 }
 header div{
-color: red;
+color: rgb(8, 37, 61);
+
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
+#about , #competencies{
+margin-bottom: 20px;
+}
+
+
 img{
     width: 90px;
     height: 90px;
+    display: none;
 }
+
 hgroup{
+    color: rgb(133, 37, 112);
     margin-left: 35px;
+    width:80%;
+    background-color: white;
+    border-radius: 50px 50px;
+    text-align: center;
+font-size: smaller;
+height: 80px;
+
 }
-.skills-primary::before{
+/*.skills-primary::before{
     content: "Main";
 }
 .skills-secondary::before{
     content: "Other";
-}
+}*/
 dl{
     display: flex;
 margin-bottom: 0;
 margin: 0;
 }
 dt{
-    background-color: red;
+    background-color: rgb(119, 176, 223);
 }
 dd{ 
     color: white;
@@ -39,7 +58,7 @@ dd{
     margin: 0;  
 }
 dd a {
-    color:red;
+    color:rgb(119, 176, 223);
     text-decoration: none;
 }
 .contacts{
@@ -65,7 +84,7 @@ h3{
 }
 
 .skill{
-    background-color: rgb(183, 196, 209);
+    background-color: rgb(0, 6, 12);
     margin-bottom: 4px;
     height: 20px;
     color: white;
@@ -76,46 +95,68 @@ h3{
 .skills-secondary , .skills-primary {
     padding-left: 10px;
 }
-.skills-secondary{
+/*.skills-secondary{
     margin-top: 30px;
-}
+    
+}*/
 .skills-primary .skill:nth-child(1) span{
     width:50%;
-    background-color: red;
+    background-color: rgb(119, 176, 223);
 
     display: block;
 
 }
 .skills-primary .skill:nth-child(2) span{
     width:30%;
-    background-color: red;
+    background-color: rgb(119, 176, 223);
+
+    display: block;
+
+}
+.skills-primary .skill:nth-child(4) span{
+    width:70%;
+    background-color: rgb(119, 176, 223);
+
+    display: block;
+
+}
+.skills-primary .skill:nth-child(5) span{
+    width:80%;
+    background-color: rgb(119, 176, 223);
+
+    display: block;
+
+}
+.skills-primary .skill:nth-child(6) span{
+    width:22%;
+    background-color: rgb(119, 176, 223);
 
     display: block;
 
 }
 .skills-primary .skill:nth-child(3) span{
     width: 10px;
-    background-color: red;
+    background-color: rgb(119, 176, 223);
     width: 8%;
     display: block;
 
 }
 .skills-secondary .skill:nth-child(1) span{
     width:70%;
-    background-color: red;
+    background-color: rgb(119, 176, 223);
     display: block;
     opacity: 0.5;
 }
 .skills-secondary .skill:nth-child(2) span{
     width:50%;
-    background-color: red;
+    background-color: rgb(119, 176, 223);
 
     opacity: 0.5;
     display: block;
 }
 .skills-secondary .skill:nth-child(3) span{
     width:60%;
-    background-color: red;
+    background-color: rgb(119, 176, 223);
 
     opacity: 0.5;
     display: block;
@@ -130,27 +171,32 @@ h3{
     margin-left: 10px;
 }
 .experience-type , .experience-institution{
-    color: red;
+    color: rgb(119, 176, 223);
 }
 h4{
     margin-bottom: 0;
 }
 
 .experience-date-separator{
-    color: red;
+    color: rgb(119, 176, 223);
+}
+h3{
+    background-color:rgb(221, 101, 171) ;
+    width: 170px;
 }
 h3::before{
     content: "";
     height: 20px;
-    width: 20px;
-    background-color: red;
-    border-radius: 50%;
+    width: 30px;
+    background-color: rgb(14, 13, 13);
+    border-radius: 20% 3% 4% 60%;
     display: inline-block;
     margin-right: 10px;
+    margin-top: 10px;
 }
 .experience-institution::before{
     margin-left: 4px;
-    color:rgb(245,3,3);
+    color:rgb(119, 176, 223);
     opacity: 0.8;
     content: "@ ";
 }
@@ -194,12 +240,14 @@ padding-top: 20px;
       }
       hgroup{
           margin-right: 20px;
+         text-align: center;
       }
 } 
 @media  screen and (max-width:479px) {
 
 header{
-   height: 230px;
+   height: 160px;
+   text-align: center;
 }
 header div {
 
@@ -210,13 +258,11 @@ header div {
 
 hgroup{
 
-
+   margin-top: 35px;
     font-size: 10px;
 
 }
-figure{
-    margin-left: 0;
-}
+
 
 .contacts{
     font-size: 12px;
