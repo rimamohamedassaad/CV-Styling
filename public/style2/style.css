@@ -1,34 +1,40 @@
-body div:first-child{
-    
-  width: 90%;
-  margin: auto;
-  
+body {
+   margin:auto;
+  background-color: rgb(230, 245, 175);
 }
 h1{
-  border-bottom: rgb(129, 125, 125) 1px solid;
+  
   margin-bottom: 20px;
   padding-bottom: 10px;
+  text-align: center;
 }
   .content{
-    margin-left: 60px;
+    margin: auto;
   }
    
-    #experiences, #education, #competencies, #hobbies {
+   
+   #experiences, #education, #competencies, #hobbies {
       display: grid;
       grid-template-columns: 110px auto;
       margin-top: 20px;
+      
     }
     #competencies h3, #education h3, #hobbies h3, #experiences h3 {
       grid-row: 1/3;
       font-style: italic;
       font-weight: bold;
-    margin:0;
       
+    margin:0;}
+    h4{
+      background-color: rgb(167, 167, 10);
+     width: fit-content;
     }
+      
+    
     figure{
       position: absolute;
-      transform:rotate(-20deg);
-      top:20px;
+      
+      top:40px;
       left:70%;
       margin-left: 20px;
       padding-top: 10px;
@@ -39,10 +45,7 @@ h1{
       height: 150px;
      
   }
-  #about p {
-    font-size: 1.2em;
-    width:70%;
-  }
+  
   .experience , .skills-primary, .skills-secondary , ul{
     border-left: black solid 1px;
   }
@@ -54,9 +57,13 @@ h2 ,#about h3{
  
 #about p{
     opacity: 60%;
-    color: gray;
+    color: rgb(41, 38, 38);
+     font-size: 1.2em;
+    width:70%;
+    margin-bottom: 60px;
+    background-color: rgb(180, 180, 113);
+    margin-left: 10px;
     
-    margin-bottom: 80px;
   }
   
   .skills-primary, .skills-secondary {
@@ -67,14 +74,16 @@ h2 ,#about h3{
     margin-left: 20x;
   }
   .skill {
-    color: #fff;
-    background-color:  #23a38a;
+    color: rgb(17, 16, 16);
+    background-color:  #43720d;
     margin: 5px; 
     height: 22px;
     padding-top: 5px;
   }
     
-    
+   .experience-description{
+     background-color: rgb(217, 230, 103);
+   } 
     
   
 .skill[data-skill="5"] , .skill[data-skill='9'],.skill[data-skill="3"],.skill[data-skill="1"] , .skill[data-skill="7"]{
@@ -120,12 +129,14 @@ h2 ,#about h3{
   padding: 10px;}
   .experience-description{
     grid-column: 1/3;}
+    
   .experience-details{
     
-    color: gray;
+    color: rgb(10, 10, 10);
     opacity: 50%;
   
     text-align: end;
+    
   }
   .skills-secondary{
     font-size: x-small;
@@ -134,7 +145,7 @@ h2 ,#about h3{
     display: none;
   }
   .experience-type{
-    color: #18927a;
+    color: #364707;
       margin-left: 20x;
      
   }
@@ -147,7 +158,9 @@ h2 ,#about h3{
   }
 
   
-  
+  h3{
+    margin-left: 10px;
+  }
   .contacts{
     display: flex;
     justify-content: center;
@@ -165,14 +178,16 @@ h2 ,#about h3{
     height: 80px;
   }
   .contact-github{
-    background-image: url(../images/github.png);
+   background-image: url(../images/github.png);
     width: 80px;
     height: 80px;
+    border-radius: 50%;
   }
   .contact-facebook{
-    background-image: url(../images/facebook.png);
+   background-image: url(fb.png);
     width: 80px;
     height: 80px;
+    border-radius: 50%;
   }
  
   .contact-value , .contact-type{
@@ -181,12 +196,19 @@ h2 ,#about h3{
   .contact{
     background-repeat: no-repeat;
     background-size:cover; 
-    margin: 10px;
+  
+    
   }
   .experience-date-separator{
-    color: #23a38a;
+    color: #0ee720;
   }
-  
+  ul{
+    background-color: rgb(119, 139, 6);
+    width: fit-content;
+  }
+  #contact{
+   background-color: goldenrod;
+  }
   @media screen and (max-width:467px){
     #experiences, #education, #competencies, #hobbies {
       display: block;
@@ -215,15 +237,14 @@ width: 65px;
       font-size: 7px;
   height: 10px;
     }
+    .skills-primary{
+      display: block;
+    }
     .skills-secondary{
       font-size: small;
+      display: block;
           }
-    .contacts{
-      width: 120%;
-      flex-wrap: wrap;
-      margin: 0;
-      justify-content: left;
-    }
+    
     figure img{
       display: none;
     }
@@ -234,9 +255,7 @@ width: 65px;
     hgroup{
       font-size: small;
     }
-    .content{
-      margin-left: 15px;
-    }
+    
     #about p {
       font-size: 1em;
       width:100%;
@@ -254,7 +273,7 @@ width: 65px;
     }
   }
   @media screen and (max-width:767px){
-    #experiences, #education, #competencies, #hobbies {
+    #experiences, #education, #competencies, #hobbies , .skills-primary, .skills-secondary{
       display: block;
     }  
     .skills-primary, .skills-secondary {
@@ -270,21 +289,20 @@ width: 65px;
     }
     #competencies h3 {
 width: 110px;
+margin-left: 10px;
     } #education h3{
 width: 80px;
+margin-left: 10px;
     } #hobbies h3{
 width: 65px;
-    } #experiences h3 { width: 100px;}
+margin-left: 10px;
+    } #experiences h3 { width: 100px;
+    margin-left: 10px;}
     .skill{
       font-size: 7px;
   height: 10px;
     }
-    .contacts{
-      width: 120%;
-      flex-wrap: wrap;
-      margin: 0;
-      justify-content: left;
-    }
+    
     figure img{
       display: none;
     }
@@ -293,9 +311,7 @@ width: 65px;
     }
     
    
-    .content{
-      margin-left: 25px;
-    }
+    
     #about p {
       font-size: 1em;
       width:100%;
@@ -303,9 +319,32 @@ width: 65px;
     .skill {
       height: 30px;
       font-size: 15px;
+      width: 50%;
     }
-    .skills{
-      width: 100%;
+    .contact-email{
+     
+      width: 40px;
+      height: 40px;
     }
+    .contact-phone{
+      
+      width: 40px;
+      height: 40px;
+    }
+    .contact-github{
+     
+      width: 40px;
+      height: 40px;
+    }
+    .contact-facebook{
+     
+      width: 40px;
+      height: 40px;
+    }
+    .skill[data-skill="5"] , .skill[data-skill='9'],.skill[data-skill="3"],.skill[data-skill="1"] , .skill[data-skill="7"]{
+  margin-left: 10px;
+  width: 50%;
+
+}
   }
   
